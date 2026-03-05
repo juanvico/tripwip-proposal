@@ -1,0 +1,24 @@
+{
+  "name": "tripwip-proposal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "encrypt": "staticrypt src/index.html src/proposals/*.html -p $PASSWORD --short -d . && mkdir -p proposals && mv *.html proposals/ 2>/dev/null; mv proposals/index.html . 2>/dev/null || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanvico/tripwip-proposal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juanvico/tripwip-proposal/issues"
+  },
+  "homepage": "https://github.com/juanvico/tripwip-proposal#readme",
+  "dependencies": {
+    "staticrypt": "^3.5.4"
+  }
+}
