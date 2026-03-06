@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "encrypt": "staticrypt src/index.html src/proposals/*.html -p $PASSWORD --short -d . && mkdir -p proposals && mv *.html proposals/ 2>/dev/null; mv proposals/index.html . 2>/dev/null || true"
+    "encrypt": "staticrypt src/index.html src/proposals/*.html -p $PASSWORD --short -d . --template-button 'Access' --template-color-primary '#2E3AC2' --template-color-secondary '#2E3AC2' --template-title 'TripWip' -t templates/password.html && mkdir -p proposals && mv *.html proposals/ 2>/dev/null; mv proposals/index.html . 2>/dev/null || true"
   },
   "repository": {
     "type": "git",
